@@ -15,7 +15,30 @@
             // 5. Flexibility: Generics allow you to create more flexible and adaptable code that can work with a wide range of data types, making it easier to extend and modify your codebase in the future.
 
             #endregion
+            #region Q2 in C# Advanced
+            //Q2: Write a generic class Container<T> with Add and Get methods.
+            // A generic class Container<T> can be implemented as follows:
+           /*
+            public class Container<T>
+        {
+            private List<T> items = new List<T>();
+            public void Add(T item)
+            {
+                items.Add(item);
+            }
+            public T Get(int index)
+            {
+                if (index < 0 || index >= items.Count)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
+                }
+                return items[index];
+            }
         }
+           */
+
+            #endregion
+    }
 
 
     }
