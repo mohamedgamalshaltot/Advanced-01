@@ -18,27 +18,44 @@
             #region Q2 in C# Advanced
             //Q2: Write a generic class Container<T> with Add and Get methods.
             // A generic class Container<T> can be implemented as follows:
-           /*
-            public class Container<T>
-        {
-            private List<T> items = new List<T>();
-            public void Add(T item)
+            /*
+             public class Container<T>
             {
-                items.Add(item);
+             private List<T> items = new List<T>();
+             public void Add(T item)
+             {
+                 items.Add(item);
+             }
+             public T Get(int index)
+             {
+                 if (index < 0 || index >= items.Count)
+                 {
+                     throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
+                 }
+                 return items[index];
+             }
             }
-            public T Get(int index)
-            {
-                if (index < 0 || index >= items.Count)
-                {
-                    throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
-                }
-                return items[index];
-            }
-        }
-           */
+            */
 
             #endregion
-    }
+            #region Q3 in C# Advanced
+            //Q3:What are multiple type parameters? Write Pair<TKey, TValue>.
+            // Multiple type parameters allow you to define a generic class or method that can work with more than one type. This is useful when you want to create a relationship between two or more types in your generic implementation.
+            // A generic class Pair<TKey, TValue> can be implemented as follows:
+            /*
+             public class Pair<TKey, TValue>
+            
+            // {
+            // public TKey Key { get; set; }
+            // public TValue Value { get; set; }
+            // public Pair(TKey key, TValue value)
+            // {
+            //     Key = key;
+            //     Value = value;
+            // }
+            */
+            #endregion
+        }
 
 
     }
